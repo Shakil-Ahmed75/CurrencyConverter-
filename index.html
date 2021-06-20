@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	
+	<title></title>
+	<link rel="stylesheet" type= "text/css" href="style.css">
+	<head>
+		<body>
+			<header>
+				<div class="head">
+			<h2> Currency Converter</h2>
+         </div>
+            <div class="head1">
+            <h2>Select Currency</h2>
+             </div>
+                   <div class="head3">
+                   <h2>Input Currency</h2>
+              </div>
+                  <div class="head4">
+                  <h2>Converted Currency</h2>
+                   </div>
+        <div class="box">
+            <select name="currency" id="inputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">	
+            <option value="Taka" selected>Bangladeshi Taka </option>
+            <option value="Rupee">Pakistani Rupee </option>
+            <option value="Dollar">United States Dollar </option>
+            <option value="CanadianDollar">Canadian Dollar  </option>
+            <option value="Euro">Euro</option>
+            <option value="TurkishLira">Turkish Lira</option>
+           </select>
+       </div>
+       <div class="inputbox">
+           <input oninput="firstToSecond()" onchange="firstToSecond()" type="number" id="firstCurrency"/>
+       </div>
+           <div class="head2">
+           <h2>Select Desired Currency</h2>
+           </div>
+
+         <div class="box1">
+            <select name="currency" id="outputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+            <option value="Taka1">Bangladeshi Taka </option>
+            <option value="Rupee1">Pakistani Rupee </option>
+            <option value="Dollar1">United States Dollar </option>
+            <option value="CanadianDollar1">Canadian Dollar </option>
+            <option value="Euro1">Euro</option>
+            <option value="TurkishLira1">Turkish Lira</option>
+           </select>
+          </div>
+          <div class="inputbox1">
+           <input id="SecondCurrency" />
+       </div>
+
+           <script type="text/javascript">
+
+           	function firstToSecond()
+           	{
+
+           		var input1=document.getElementById("firstCurrency").value;
+           	
+
+               /*  bangladeshi tk*/
+            if(document.getElementById("inputCurrency").value=='Taka')
+            {
+
+            if(document.getElementById("outputCurrency").value=='Taka1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Rupee1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*1.85;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Dollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.012;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.015;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='Euro1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.0099;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='TurkishLira1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.10;
+
+
+           }
+           }
+
+
+
+
+                            /* pakistain reupee */
+
+           if(document.getElementById("inputCurrency").value=='Rupee')
+            {
+
+            if(document.getElementById("outputCurrency").value=='Rupee1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Taka1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.54;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Dollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.0064;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.0079;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='Euro1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.0054;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='TurkishLira1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.056;
+           }
+
+           }
+
+                               /* usd dollor*/
+
+           if(document.getElementById("inputCurrency").value=='Dollar')
+            {
+
+            if(document.getElementById("outputCurrency").value=='Dollar1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Taka1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*84.76;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Rupee1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*156.85;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*1.25;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='Euro1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.84;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='TurkishLira1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*8.74;
+           }
+             }
+                        /* CanadianDollar' */
+
+           if(document.getElementById("inputCurrency").value=='CanadianDollar')
+            {
+
+            if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Taka1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*68.01;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Rupee1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*125.85;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Dollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.80;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='Euro1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.68;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='TurkishLira1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*7.01;
+           }
+
+           }
+
+                          /* euro' */
+           if(document.getElementById("inputCurrency").value=='Euro')
+            {
+
+            if(document.getElementById("outputCurrency").value=='Euro1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Taka1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*100.57;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Rupee1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*186.09;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Dollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*1.19;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*1.48;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='TurkishLira1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*10.37;
+           }
+
+
+           }
+
+                                 /* TurkishLira  */
+
+           if(document.getElementById("inputCurrency").value=='TurkishLira')
+            {
+
+            if(document.getElementById("outputCurrency").value=='TurkishLira1')
+            {
+
+             document.getElementById("SecondCurrency").value=input1*1;
+
+           	} 
+
+           	else if(document.getElementById("outputCurrency").value=='Taka1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*9.70;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Rupee1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*17.94;
+
+           	}
+
+           	else if(document.getElementById("outputCurrency").value=='Dollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.11;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='CanadianDollar1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.14;
+
+           	}
+             else if(document.getElementById("outputCurrency").value=='Euro1')
+           	{
+
+             document.getElementById("SecondCurrency").value=input1*0.096;
+
+           	}
+
+           }
+       }
+
+           </script>
+       </header>
+		</body>
+	</head>
+</html>

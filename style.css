@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Anton, sans-serif;;
+}
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('Financial.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;	
+}
+
+.head h2{
+	position: absolute;
+	top: 15%;
+	left: 54%;
+	transform: translate(-50%,-50%);
+
+}
+.head h2{
+	color: #FFF;
+	font-size: 50px;
+
+}
+.head1 h2{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+
+}
+.head1 h2{
+	color: #fff;
+	font-size: 25px;
+}
+
+.head2 h2{
+	position: absolute;
+	top: 48%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+}
+.head2 h2{
+	color: #fff;
+	font-size: 25px;
+}
+.box select{
+	position: absolute;
+	top: 38%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+    
+}
+.box select{
+	background: #af0505;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	width: 250px
+	border: solid transparent;
+
+	box-shadow: 0 5px 25px rgba(0,0,139,.6);
+}
+
+
+.box1 select{
+	position: absolute;
+	top: 56%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+}
+.box1 select{
+	background: #af0505;
+
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	width: 250px
+	border: solid transparent;
+	box-shadow: 0 5px 25px rgba(0,0,139,.6);
+}
+.inputbox input{
+	position: absolute;
+	top: 38%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+}
+
+.inputbox input{
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	font-size: 25px;
+	width: 250px
+	border: #00FFFF;
+	border-width: 2px;
+	border-height: 2px;
+	box-shadow: 0 5px 25px rgba(0,0,139,.5);
+}
+.inputbox1 input{
+	position: absolute;
+	top: 56%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+}
+.inputbox1 input{
+	background-color: rgba(255, 255, 255, 0.226);
+	color: #fff;
+	font-size: 25px;
+	width: 250px
+	border: #00FFFF;
+	border-width: 2px;
+	border-height: 2px;
+	box-shadow: 0 5px 25px rgba(0,0,139,.5);
+}
+
+.head3 h2{
+	position: absolute;
+	top: 30%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+}
+.head3 h2{
+	color: #fff;
+	font-size: 25px;
+}
+.head4 h2{
+	position: absolute;
+	top: 48%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+}
+.head4 h2{
+	color: #fff;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
